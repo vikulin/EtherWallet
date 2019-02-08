@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/itemList"
+    android:weightSum="7"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@color/distanceHeader">
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_gravity="center">
+        <TextView
+            android:text="@string/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTotal"
+            android:textSize="18dip"
+            android:textStyle="bold"
+            android:layout_marginRight="5dip" />
+        <TextView
+            android:text="0"
+            android:id="@+id/totalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTotal"
+            android:textSize="18dip"
+            android:textStyle="bold"
+            android:layout_marginRight="5dip"/>
+    </LinearLayout>
+    <ImageButton
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/up"
+        android:background="@android:color/transparent"
+        android:onClick="onClickUpDown"/>
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next"
+        android:background="@android:color/transparent"/>
+</LinearLayout>

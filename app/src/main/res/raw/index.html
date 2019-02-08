@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html ng-app="mewApp" class="ng-scope" lang="en">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta charset="utf-8">
+    <meta name="description" content="Open-Source &amp; Client-Side Ether Wallet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#163151">
+
+</head>
+<body>
+<section class="container ng-scope" style="min-height: 50%;" ng-controller="viewCtrl">
+    <div class="tab-content">
+        <article class="tab-pane help active ng-scope" ng-if="globalService.currentTab==globalService.tabs.help.id">
+            <!--DOCUMENT_FRAGMENT-->
+            <h1 translate="NAV_Help" class="ng-scope">Help</h1>
+            <p translate="HELP_Desc" class="ng-scope">Do you see something missing? Have another question? <a target="_top" href="mailto:vadym.vikulin@gmail.com">Get in touch with me (vadym.vikulin@gmail.com)</a>, and I will not only answer your question, I will update this page to be more useful to people in the future!</p>
+            <article class="collapse-container">
+                <div ng-click="hRemind = !hRemind">
+                </div></article>
+            <!--/DOCUMENT_FRAGMENT-->
+            <div ng-click="hRemind = !hRemind"><h4 translate="HELP_Remind_Title" class="ng-scope">Some reminders</h4>
+            </div>
+            <div ng-show="!hRemind" class="">
+                <ul>
+                    <li translate="HELP_Remind_Desc_1" class="ng-scope"><strong>EtherWallet is under active development.</strong>
+                    <li translate="HELP_Remind_Desc_2" class="ng-scope">All walletList never leaves your computer/your device. We make it easy for you to create, save, and access your information and interact with the blockchain.</li>
+                    <li translate="HELP_Remind_Desc_3" class="ng-scope">If you do not save your private key &amp; password, there is no way to recover access to your wallet or the funds it holds.  Back them up in multiple physical locations – not just on your computer!</li></ul></div>
+            <div ng-click="h0 = !h0"><h4 translate="HELP_0_Title" class="ng-scope">0) I'm new. What do I do?</h4>
+            </div>
+            <div ng-show="h0" class="" style="">
+                <p translate="HELP_0_Desc_1" class="ng-scope">EtherWallet gives you the ability to generate new wallets so you can store your Ether yourself, not on an exchange. This process happens entirely on your device, not our servers. Therefore, when you generate a new wallet, <strong>you are responsible for safely backing it up</strong>.</p>
+                <ol>
+                    <li translate="HELP_0_Desc_2" class="ng-scope">Create a new wallet.</li>
+                    <li translate="HELP_0_Desc_3" class="ng-scope">Back the wallet up.</li>
+                    <li translate="HELP_0_Desc_4" class="ng-scope">Verify you have access to this new wallet and have correctly saved all necessary information.</li>
+                    <li translate="HELP_0_Desc_5" class="ng-scope">Transfer Ether to this new wallet.</li></ol></div>
+            <div ng-click="h1 = !h1"><h4 translate="HELP_1_Title" class="ng-scope">1) How do I create a new wallet?</h4>
+            </div>
+            <div ng-show="h1" class="" style="">
+                <ol>
+                    <li translate="HELP_1_Desc_1" class="ng-scope">Go to the main menu, open Wallets and tap on (+) blue button.</li>
+                    <li translate="HELP_1_Desc_3" class="ng-scope">Enter a strong password and confirm it. If you think you may forget it, save it somewhere safe. You will need this password to send transactions.</li>
+                    <li translate="HELP_1_Desc_4" class="ng-scope">Press "Add wallet".</li>
+                    <li translate="HELP_1_Desc_5" class="ng-scope">Your wallet has now been generated.</li></ol></div>
+            <div ng-click="h2a = !h2a"><h4 translate="HELP_2a_Title" class="ng-scope">2a) How do I save/backup my wallet?</h4>
+            </div>
+            <div ng-show="h2a" class="" style="">
+                <p translate="HELP_2a_Desc_1" class="ng-scope">You should always back up your wallet externally and in multiple physical locations - like on a USB drive and/or a piece of paper.</p>
+                <ol>
+                    <li translate="HELP_2a_Desc_2" class="ng-scope">Save the address or domain name. You can keep it to yourself or share it with others. That way, others can transfer ether to you.</li>
+                    <li translate="HELP_2a_Desc_3" class="ng-scope">Save versions of the private key using "Send Ether to email" menu. Do not share it with anyone else. Your private key is necessary when you want to access your Ether to send it!</li>
+                    <ul>
+                        <li><strong translate="x_Keystore" class="ng-scope">Keystore File (UTC / JSON · Recommended · Encrypted)</strong> <span translate="x_KeystoreDesc" class="ng-scope">This Keystore file matches the format used by Mist so you can easily import it in the future. It is the recommended file to download and back up. EtherWallet works with encrypted private keys only and saves it in internal android application cache.</span></li>
+                    </ul>
+                    <li translate="HELP_2a_Desc_5" class="ng-scope">Print the wallet if you have a printer. Otherwise, write down your private key and address on a piece of paper. Store this as a secure location, separate from your computer and the USB drive.</li>
+                    <li translate="HELP_2a_Desc_6" class="ng-scope">Keep in mind, you must prevent loss of the keys and password due to loss or failure of you hard drive failure, or USB drive, or piece of paper. You also must keep in mind physical loss / damage of an entire area (think fire or flood).</li>
+                </ol>
+            </div>
+            <div ng-click="h3 = !h3"><h4 translate="HELP_3_Title" class="ng-scope">3) How do I verify I have access to my new wallet?</h4>
+            </div>
+            <div ng-show="h3" class="" style="">
+                <p translate="HELP_3_Desc_1" class="ng-scope"><strong>Before you send any Ether to your new wallet</strong>, you should ensure you have access to it.</p>
+                <ol>
+                    <li translate="HELP_3_Desc_2" class="ng-scope">Navigate to the "Wallets" menu.</li>
+                    <li translate="HELP_3_Desc_4" class="ng-scope">Select your wallet from list and press ⩓.</li>
+                    <li translate="HELP_3_Desc_5" class="ng-scope">Scroll down and press 🔒. The wallet is encrypted, a text box will automatically appear. Enter the password.</li>
+                    <li translate="HELP_3_Desc_6" class="ng-scope">Click the "OK" button.</li>
+                    <li translate="HELP_3_Desc_7" class="ng-scope">Your wallet information with private key show up. Find your account address, next to a colorful, circular icon. This icon visually represents your address. Be certain that the address is the address you have saved to your text document and is on your paper wallet.</li>
+                    <li translate="HELP_3_Desc_8" class="ng-scope">If you are planning on holding a large amount of ether, we recommend that send a small amount of ether from new wallet before depositing a large amount. Send 0.001 ether to your new wallet, access that wallet, send that 0.001 ether to another address, and ensure everything works smoothly.</li></ol></div>
+            <div ng-click="h4 = !h4"><h4 translate="HELP_4_Title" class="ng-scope">4) How do I send Ether from one wallet to another?</h4>
+            </div>
+            <div ng-show="h4" class="" style="">
+                <p translate="HELP_4_Desc_1" class="ng-scope">If you plan to move a large amount of ether, you should test sending a small amount to your wallet first to ensure everything goes as planned.</p>
+                <ol>
+                    <li translate="HELP_4_Desc_2" class="ng-scope">Navigate to the "Send Ether" menu.</li>
+                    <li translate="HELP_4_Desc_3" class="ng-scope">Select your wallet.</li>
+                    <li translate="HELP_4_Desc_6" class="ng-scope">Enter the address you would like to send to in the "Send transaction" address field.</li>
+                    <li translate="HELP_4_Desc_7" class="ng-scope">Enter the amount you would like to send.</li>
+                    <li translate="HELP_4_Desc_9" class="ng-scope">Click "Generate Transaction".</li>
+                    <li translate="HELP_4_Desc_4" class="ng-scope">A text box will automatically appear. Enter the password.</li>
+                    <li translate="HELP_4_Desc_12" class="ng-scope">A pop-up will appear. The transaction will be submitted.</li>
+                </ol>
+            </div>
+        </article>
+    </div>
+</section>
+</body>
+</html>

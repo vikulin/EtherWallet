@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorTotal">#2343C0</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorDelimiter">#777</color>
+    <color name="colorPrice">#FFFFFF</color>
+    <color name="distanceHeader">#EEEEEE</color>
+    <color name="buttonColor">#11253D</color>
+
+    <color name="actionbar_opacity">#33000000</color>
+    <color name="primary">#3F51B5</color>
+    <color name="add">#5F84CE</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="accent">#E040FB</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+
+    <color name="headerColor">#b2d5eb</color>
+    <color name="headerCurrency">#004d7e</color>
+    <color name="planBackground">#e4f1f9</color>
+    <color name="planTextColor">#0f78bb</color>
+    <color name="buyBackgroundColor">#00517c</color>
+
+    <color name="contactColor">#4e4e4e</color>
+    <color name="gray">#A8A8A8</color>
+    <color name="bg">#143a56</color>
+</resources>

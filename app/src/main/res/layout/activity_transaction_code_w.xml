@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.vikulin.etherwallet.BillCodeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@color/bg">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/etherwallet_logo"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarLayout"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/qrCodeImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:paddingRight="20px"
+            android:paddingLeft="20px">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:text="@string/date"
+                    android:textStyle="bold"
+                    android:padding="5dip"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:id="@+id/date"
+                    android:textStyle="bold"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:text="⇦"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_height="match_parent"
+                    android:paddingTop="9dp"
+                    android:id="@+id/addressFrom"
+                    android:textStyle="bold"
+                    android:text=""
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:text="⇨"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_height="match_parent"
+                    android:paddingTop="9dp"
+                    android:id="@+id/addressTo"
+                    android:textStyle="bold"
+                    android:text=""/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dip">
+                <TextView
+                    android:text="ID:"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:id="@+id/transactionId"
+                    android:textStyle="bold"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dip">
+                <TextView
+                    android:text="@string/sum"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_text"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:id="@+id/value"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/primary_text"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</RelativeLayout>

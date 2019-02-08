@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/barCode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:hint="Bar code:"/>
+    <EditText
+        android:id="@+id/sellItemName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textAutoComplete"
+        android:hint="Name:"/>
+    <EditText
+        android:id="@+id/itemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="numberDecimal"
+        android:hint="Price:"/>
+</LinearLayout>

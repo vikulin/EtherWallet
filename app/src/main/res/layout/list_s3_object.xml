@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:background="@drawable/list_item">
+
+    <TextView android:id="@+id/key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textStyle="normal"
+        android:textSize="15dp"
+        android:textColor="@color/primary_text"
+        android:ellipsize="middle"
+        android:maxLines="1"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp" />
+    <ListView android:id="@+id/versions"
+        android:layout_below="@+id/key"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:visibility="gone"
+        android:nestedScrollingEnabled="true"/>
+</RelativeLayout>
