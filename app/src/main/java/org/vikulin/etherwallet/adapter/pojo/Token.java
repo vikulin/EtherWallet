@@ -1,6 +1,6 @@
 package org.vikulin.etherwallet.adapter.pojo;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * Created by vadym on 30.07.17.

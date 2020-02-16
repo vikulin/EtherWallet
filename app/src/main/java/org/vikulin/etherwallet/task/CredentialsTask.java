@@ -6,7 +6,7 @@ package org.vikulin.etherwallet.task;
 
 import android.content.Context;
 import android.os.AsyncTask;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

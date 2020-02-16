@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context="org.vikulin.etherwallet.BillCodeActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/etherwallet_logo"/>
         </android.support.v7.widget.Toolbar>
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

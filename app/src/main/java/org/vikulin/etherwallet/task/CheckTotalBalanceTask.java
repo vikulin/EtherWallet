@@ -2,10 +2,9 @@ package org.vikulin.etherwallet.task;
 
 import android.app.Activity;
 import android.os.AsyncTask;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.widget.TextView;
 
-import org.vikulin.etherwallet.AccountListActivity;
 import org.web3j.protocol.Web3j;
 import org.web3j.protocol.Web3jFactory;
 import org.web3j.protocol.core.DefaultBlockParameterName;

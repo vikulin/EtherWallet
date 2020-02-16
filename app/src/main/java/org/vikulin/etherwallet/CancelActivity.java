@@ -3,7 +3,7 @@ package org.vikulin.etherwallet;
 import android.app.Activity;
 import android.app.NotificationManager;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 /**
  * Created by vadym on 25.04.17.

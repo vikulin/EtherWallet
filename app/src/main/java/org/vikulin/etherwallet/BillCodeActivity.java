@@ -6,6 +6,7 @@ import android.graphics.Point;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Display;
+import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 

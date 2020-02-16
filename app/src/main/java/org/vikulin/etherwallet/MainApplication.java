@@ -1,9 +1,8 @@
 package org.vikulin.etherwallet;
 
 import android.app.Activity;
-import android.app.PendingIntent;
 import android.content.Intent;
-import android.support.multidex.MultiDexApplication;
+import androidx.multidex.MultiDexApplication;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

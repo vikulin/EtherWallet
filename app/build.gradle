@@ -3,14 +3,14 @@ import org.apache.tools.ant.taskdefs.condition.Os
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 29
+    buildToolsVersion '29.0.3'
     defaultConfig {
         applicationId "org.vikulin.etherwallet"
         minSdkVersion 15
-        targetSdkVersion 28
-        versionCode 134
-        versionName "2.3.11"
+        targetSdkVersion 29
+        versionCode 135
+        versionName "2.3.12"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled=true
         manifestPlaceholders = [onesignal_app_id: "fee382f7-7e86-446c-8628-c28074121501",
@@ -80,24 +80,24 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'resources')
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
-    implementation 'com.github.iotaledger:iota-java:1.0.0-beta5'
+
     implementation 'org.web3j:core:3.3.1-android'
     implementation files('src/main/resources/dualcache-library-debug-3.0.0.jar')
     implementation files('src/main/resources/disklrucache-2.0.3-SNAPSHOT.jar')
 
     implementation 'org.jsoup:jsoup:1.10.2'
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support:customtabs:28.0.0'
-    implementation 'com.android.support:support-vector-drawable:28.0.0'
-    implementation 'com.android.support:support-media-compat:28.0.0'
-    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.browser:browser:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.media:media:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
-    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
     implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
     implementation 'me.dm7.barcodescanner:zxing:1.9.13'
 
     implementation 'cz.msebera.android:httpclient:4.4.1.2'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.8.5'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.4'
 
     implementation 'com.lambdaworks:scrypt:1.4.0'
     implementation 'com.madgag.spongycastle:prov:1.54.0.0'
@@ -108,7 +108,7 @@ dependencies {
     implementation 'com.vincentbrison.openlibraries.android:dualcache-jsonserializer:3.0.0'
 
     //fix class not found error
-    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.multidex:multidex:2.0.0'
     //DNS client
     implementation 'dnsjava:dnsjava:2.1.8'
     implementation 'it.sephiroth.android.library.targettooltip:target-tooltip-library:1.3.15'

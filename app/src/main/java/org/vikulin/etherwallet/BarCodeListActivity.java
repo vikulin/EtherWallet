@@ -3,8 +3,8 @@ package org.vikulin.etherwallet;
 import android.content.DialogInterface;
 import android.media.AudioManager;
 import android.media.ToneGenerator;
-import android.support.v4.app.DialogFragment;
-import android.support.v7.app.AlertDialog;
+import androidx.fragment.app.DialogFragment;
+import androidx.appcompat.app.AlertDialog;
 import android.view.View;
 import android.widget.EditText;
 

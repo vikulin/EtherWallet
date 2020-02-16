@@ -1,9 +1,8 @@
 package org.vikulin.etherwallet.push;
 
-import android.content.SharedPreferences;
 import android.graphics.BitmapFactory;
-import android.preference.PreferenceManager;
-import android.support.v4.app.NotificationCompat;
+
+import androidx.core.app.NotificationCompat;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -11,25 +10,20 @@ import com.onesignal.NotificationExtenderService;
 import com.onesignal.OSNotificationDisplayedResult;
 import com.onesignal.OSNotificationReceivedResult;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 import org.vikulin.ethername.Domain;
 import org.vikulin.etherpush.Code;
 import org.vikulin.etherpush.Data;
 import org.vikulin.etherpush.Message;
 import org.vikulin.etherpush.Transaction;
-import org.vikulin.etherpush.data.EncryptCredentials;
 import org.vikulin.etherwallet.R;
 import org.web3j.utils.Convert;
 import org.xbill.DNS.TextParseException;
 
-import java.io.IOException;
 import java.math.BigInteger;
 import java.net.UnknownHostException;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Created by vadym on 22.03.17.

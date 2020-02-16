@@ -7,8 +7,8 @@ import android.content.pm.PackageManager;
 import android.media.AudioManager;
 import android.media.ToneGenerator;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.TypedValue;
@@ -26,10 +26,6 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonSyntaxException;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.vikulin.ethername.Domain;
@@ -37,30 +33,21 @@ import org.vikulin.etherwallet.adapter.TokenAdapter;
 import org.vikulin.etherwallet.adapter.pojo.EthplorerResponse;
 import org.vikulin.etherwallet.adapter.pojo.Token;
 import org.vikulin.etherwallet.adapter.pojo.TokenInfo;
-import org.vikulin.etherwallet.listener.HandleExceptionListener;
 import org.vikulin.etherwallet.task.CheckBalanceTask;
 import org.vikulin.etherwallet.task.CheckContractCodeTask;
 import org.vikulin.etherwallet.task.CheckTransactionFeeTask;
 import org.xbill.DNS.TextParseException;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.net.UnknownHostException;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import cz.msebera.android.httpclient.HttpResponse;
-import cz.msebera.android.httpclient.client.methods.HttpGet;
-import cz.msebera.android.httpclient.impl.client.CloseableHttpClient;
-import cz.msebera.android.httpclient.impl.client.HttpClientBuilder;
 
 import static org.web3j.utils.Numeric.prependHexPrefix;
 

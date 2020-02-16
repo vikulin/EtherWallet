@@ -22,8 +22,6 @@ import org.web3j.utils.Numeric;
 import org.xbill.DNS.TextParseException;
 
 import java.net.UnknownHostException;
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
 import java.util.HashSet;
 import java.util.Set;
 
