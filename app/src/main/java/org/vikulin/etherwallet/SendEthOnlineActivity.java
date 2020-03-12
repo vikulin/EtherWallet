@@ -249,13 +249,10 @@ public class SendEthOnlineActivity extends FullScreenActivity {
             mAuthTask = null;
             showProgress(false);
             if (exception==null) {
-                showInfoDialogOnUiThread("SUCCESS", getString(R.string.payment_successful), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        updateNonce(keyContentFrom);
-                        setResult(Activity.RESULT_OK);
-                        finish();
-                    }
+                showInfoDialogOnUiThread("SUCCESS", getString(R.string.payment_successful), (dialogInterface, i) -> {
+                    updateNonce(keyContentFrom);
+                    setResult(Activity.RESULT_OK);
+                    finish();
                 });
             } else {
                 StringWriter sw = new StringWriter();

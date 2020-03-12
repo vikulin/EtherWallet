@@ -179,7 +179,7 @@ public class KeyFilePasswordActivity extends FullScreenActivity {
             try {
                 keyFile = new File(this.keyPath.getPath());
                 credentials = WalletNativeUtils.loadCredentials(this.mPassword, keyFile);
-                web3j = Web3jFactory.build(new HttpService("https://mainnet.infura.io/erbkhNQe0QE11SJcEi1B"));
+                web3j = Web3jFactory.build(new HttpService("https://mainnet.infura.io/v3/fe943ac1a7ef432f9f41d61417ebb350"));
                 importKey();
             } catch (IOException e) {
                 e.printStackTrace();

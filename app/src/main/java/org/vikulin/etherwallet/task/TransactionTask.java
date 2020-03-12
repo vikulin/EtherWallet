@@ -62,7 +62,7 @@ public abstract class TransactionTask extends AsyncTask<Void, Void, Exception> {
     protected Exception doInBackground(Void... params) {
         try {
             credentials = loadCredentials(this.mPassword, o.toString());
-            web3j = Web3jFactory.build(new HttpService("https://mainnet.infura.io/erbkhNQe0QE11SJcEi1B"));
+            web3j = Web3jFactory.build(new HttpService("https://mainnet.infura.io/v3/fe943ac1a7ef432f9f41d61417ebb350"));
             //web3j = Web3jFactory.build(new HttpService("http://hyperborian.org:8545"));
             return generateTransaction();
         } catch (IOException e) {

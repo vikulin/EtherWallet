@@ -207,7 +207,7 @@ public class BillCodeActivity extends FullScreenActivity implements ZXingScanner
         protected Exception doInBackground(Void... params) {
             try {
                 //Web3j init
-                web3j = Web3jFactory.build(new HttpService("https://mainnet.infura.io/erbkhNQe0QE11SJcEi1B"));
+                web3j = Web3jFactory.build(new HttpService("https://mainnet.infura.io/v3/fe943ac1a7ef432f9f41d61417ebb350"));
             } catch (RuntimeException e){
                 e.printStackTrace();
                 return e;
@@ -258,7 +258,7 @@ public class BillCodeActivity extends FullScreenActivity implements ZXingScanner
 
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        Web3j web3j = Web3jFactory.build(new HttpService("https://mainnet.infura.io/erbkhNQe0QE11SJcEi1B"));
+        Web3j web3j = Web3jFactory.build(new HttpService("https://mainnet.infura.io/v3/fe943ac1a7ef432f9f41d61417ebb350"));
         //Web3j web3j = KeyFilePasswordActivity.getWeb3j();
         String uuid = UUID.randomUUID().toString().replace("-","");
         System.out.println(uuid);

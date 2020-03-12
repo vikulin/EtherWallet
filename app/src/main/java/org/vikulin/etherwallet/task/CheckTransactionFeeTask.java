@@ -47,7 +47,7 @@ public final class CheckTransactionFeeTask extends AsyncTask<Void, Void, BigInte
     @Override
     protected BigInteger doInBackground(Void... voids) {
         try {
-            web3j = Web3jFactory.build(new HttpService("https://mainnet.infura.io/erbkhNQe0QE11SJcEi1B"));
+            web3j = Web3jFactory.build(new HttpService("https://mainnet.infura.io/v3/fe943ac1a7ef432f9f41d61417ebb350"));
         } catch (RuntimeException e){
             e.printStackTrace();
         }

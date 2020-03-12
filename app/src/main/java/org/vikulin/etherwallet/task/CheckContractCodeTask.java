@@ -33,7 +33,7 @@ public final class CheckContractCodeTask extends AsyncTask<Void, Void, Exception
     @Override
     protected Exception doInBackground(Void... voids) {
         try {
-            web3j = Web3jFactory.build(new HttpService("https://mainnet.infura.io/erbkhNQe0QE11SJcEi1B"));
+            web3j = Web3jFactory.build(new HttpService("https://mainnet.infura.io/v3/fe943ac1a7ef432f9f41d61417ebb350"));
         } catch (RuntimeException e){
             e.printStackTrace();
             return e;
