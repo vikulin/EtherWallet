@@ -323,18 +323,16 @@ public class ConfigurationActivity extends ListActivity {
             final ListView lv = getListView();
             lv.setTextFilterEnabled(true);
             setListAdapter(new ArrayAdapter<>(this, R.layout.list_language_item, languages));
-            lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
-                    String language = languages[position];
-                    preferences.edit().putString(LANGUAGE, language).commit();
-                    if(preferences.getString(POLICY, null) == null) {
-                        lv.setVisibility(View.GONE);
-                        finish();
-                        startActivity(getIntent());
-                        //showPolicy(position);
-                    } else {
-                        run(position);
-                    }
+            lv.setOnItemClickListener((parent, view, position, id) -> {
+                String language1 = languages[position];
+                preferences.edit().putString(LANGUAGE, language1).commit();
+                if(preferences.getString(POLICY, null) == null) {
+                    lv.setVisibility(View.GONE);
+                    finish();
+                    startActivity(getIntent());
+                    //showPolicy(position);
+                } else {
+                    run(position);
                 }
             });
         } else {
@@ -384,12 +382,9 @@ public class ConfigurationActivity extends ListActivity {
                 .setIcon(R.mipmap.eth)
                 .setView(view)
                 .setCancelable(false)
-                .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        preferences.edit().putString(POLICY, "accepted").commit();
-                        run(language);
-                    }
+                .setPositiveButton("Accept", (dialogInterface, i) -> {
+                    preferences.edit().putString(POLICY, "accepted").commit();
+                    run(language);
                 });
         ab.show();
     }
@@ -403,12 +398,9 @@ public class ConfigurationActivity extends ListActivity {
         ab.setTitle("Privacy policy")
                 .setView(view)
                 .setCancelable(false)
-                .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        preferences.edit().putString(POLICY, "accepted").commit();
-                        run(position);
-                    }
+                .setPositiveButton("Accept", (dialogInterface, i) -> {
+                    preferences.edit().putString(POLICY, "accepted").commit();
+                    run(position);
                 });
     }
 

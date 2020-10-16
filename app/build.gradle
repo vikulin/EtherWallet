@@ -86,13 +86,13 @@ dependencies {
     implementation files('src/main/resources/disklrucache-2.0.3-SNAPSHOT.jar')
 
     implementation 'org.jsoup:jsoup:1.10.2'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.browser:browser:1.2.0'
     implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
-    implementation 'androidx.media:media:1.1.0'
+    implementation 'androidx.media:media:1.2.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
-    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.google.android.material:material:1.2.1'
     implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
     implementation 'me.dm7.barcodescanner:zxing:1.9.13'
 
